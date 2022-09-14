@@ -1,7 +1,10 @@
 const mongoose = require("mongoose");
+require('dotenv').config();
 const apiQuotes = require("../api/functionQuotes");
+const mongoDB = process.env.DBurl;
 
-const quoteDB = mongoose.createConnection('mongodb+srv://admin:quotes@cluster0.aldfyn6.mongodb.net/test');
+
+const quoteDB = mongoose.createConnection(mongoDB);
 
 const Quotes = quoteDB.model(
     'Quotes',
@@ -15,11 +18,10 @@ const Quotes = quoteDB.model(
 }, {collection: 'test'})
 );
 
-
-// quoteDB.collection("test").insertMany(apiQuotes, function(err, res) {
-//     if (err) throw err;
-//     console.log("Number of documents inserted: " + res.insertedCount);
-//     quoteDB.close();
-//   });
+    quoteDB.collection('test').deleteMany();
+    quoteDB.collection("test").insertMany(apiQuotes, function(err, res) {
+    if (err) throw err;
+    console.log("Number of documents inserted: " + res.insertedCount);
+    });
 
 module.exports = Quotes;
