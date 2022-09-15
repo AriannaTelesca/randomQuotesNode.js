@@ -1,5 +1,5 @@
-const mongoose = require("mongoose");
 require('dotenv').config();
+const mongoose = require("mongoose");
 const apiQuotes = require("../api/functionQuotes");
 const mongoDB = process.env.DBurl;
 
