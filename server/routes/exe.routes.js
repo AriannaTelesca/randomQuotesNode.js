@@ -34,7 +34,6 @@ router.get("/:author",(req, res,)=>{
     .catch(err => res.status(400).json('Error'+err))
 });
 
-// //Get by ID Method
- 
+
 
 module.exports = router;
