@@ -1,8 +1,8 @@
 # randomQuotesNode.js
 node.js random quotes 
 
-Random Quotes is a project in node.js.
+Random Quotes is a projet in node.js.
 
-I created a function with random adjectives, nouns and adverbs to have fakes quotes. For the authors I created a function to add a name of my classmates to the lastname of a writer.
+I have created a function with random adjectives, nouns and adverbs to obtain fakes quotes. In order to create the name of the authors, I have created a function wich links a random name of my classmates with a random lastname of a writer.
 
-The api I have created is pushed on the database MongoDB. To have all the data you have to follow the route /getAll but it is possible also the search by author (/author name).
+The api I have created is placed on the database MongoDB. To obtain all the data you have to follow the route /getAll but it is also possible to run a search by author (route: /author name).
