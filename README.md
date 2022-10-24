@@ -1,6 +1,8 @@
 # randomQuotesNode.js
 node.js random quotes 
 
+[Random Fakes Quotes](https://randomquotesfake.herokuapp.com/api/getAll)
+
 Random Quotes is a projet in node.js.
 
 I have created a function with random adjectives, nouns and adverbs to obtain fakes quotes. In order to create the name of the authors, I have created a function wich links a random name of my classmates with a random lastname of a writer.
